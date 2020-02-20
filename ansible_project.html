@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ansible Platform: Project Documentation</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ansible Documentation">
+    <meta name="author" content="Ansible, Inc.">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">    
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-29861888-3', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="//www.redhat.com/dtm.js"></script>
+
+</head> 
+
+    <nav class="main navbar navbar-expand-md w-100 justify-content-end">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top"></span>
+            <span class="icon-bar center"></span>
+            <span class="icon-bar bottom"></span>
+        </button>
+
+
+
+        <div class="collapse navbar-collapse" id="main-menu">
+            <div class="container">
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://www.ansible.com/ansiblefest">AnsibleFest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ansible.com/products/engine">Engine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ansible.com/products/tower">Tower</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ansible.com/community">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ansible.com/resources/webinars-training">Webinars &amp; Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ansible.com/blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://docs.ansible.com">Docs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<body class="landing-page">   
+	
+	<!-- GITHUB BUTTON JS -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+     
+    <!--FACEBOOK LIKE BUTTON JAVASCRIPT SDK-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <div class="page-wrapper">
+        
+        <!-- ******Header****** -->
+        <header class="header text-center">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <span>
+                            <a href="index.html">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35" height="35" viewBox="0 0 35 35" style="enable-background:new 0 0 28 28;" xml:space="preserve">
+                        <style type="text/css"> .st0{fill:#FFFFFF;} </style>
+                        <circle class="st0" cx="14" cy="14" r="13.5"/>
+                        <path d="M20.4,19.3L15,6.4c-0.2-0.4-0.5-0.6-0.8-0.6c-0.4,0-0.7,0.2-0.9,0.6L7.5,20.6h2l2.3-5.8l7,5.6c0.3,0.2,0.5,0.3,0.7,0.3c0.5,0,1-0.4,1-1C20.5,19.6,20.4,19.5,20.4,19.3z M14.2,8.7l3.5,8.6l-5.3-4.1L14.2,8.7z"/>
+                        </svg>
+                    </a>
+                        </span>
+                        <span class="text-highlight">Ansible Automation Platform</span> <span class="text-bold">Docs</span>
+                    </h1>
+                </div><!--//branding-->
+                <div class="tagline">
+                    <h1><b>Ansible Project</b></h1>
+                    
+                </div><!--//tagline-->
+                
+
+                 
+                <!-- <div class="social-container">-->
+	                <!-- Replace with your Github Button -->
+	                <!-- <div class="github-btn mb-2">
+						<a class="github-button" href="https://github.com/xriley/PrettyDocs-Theme" data-size="large" aria-label="Star xriley/PrettyDocs-Theme on GitHub">Star</a>
+                        <a class="github-button" href="https://github.com/xriley" data-size="large" aria-label="Follow @xriley on GitHub">Follow @xriley</a>
+	                </div> -->
+	                <!-- Replace with your Twitter Button -->
+                    <!-- <div class="twitter-tweet">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-text="PrettyDocs - A FREE #Bootstrap theme for project documentations #Responsive" data-via="3rdwave_themes">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </div>//tweet-->
+                    <!-- Replace with your Facebook Button -->
+                    <!--<div class="fb-like" data-href="https://themes.3rdwavemedia.com" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>            
+                 </div>--> <!--//social-container-->
+                 
+                
+            </div><!--//container-->
+        </header><!--//header-->
+        
+        <section class="cards-section text-center">
+               
+                <div id="cards-wrapper" class="cards-wrapper row">
+                    <div class="item item-green col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                               <span style="font-size: 3em; color: Tomato;" class="icon fas fa-book"></i>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">Ansible Documentation</h3>
+                            <p class="intro">The full documentation behind Ansible Engine and Core</p>
+                            <a class="link" href="https://docs.ansible.com/ansible/latest/index.html"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item item-pink item-2 col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <span aria-hidden="true" style="font-size: 3em; color: Tomato;" class="fab fa-readme"></span>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">Installation</h3>
+                            <p class="intro">How to install Ansible on various platforms</p>
+                            <a class="link" href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item item-blue col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <span aria-hidden="true" style="font-size: 3em; color: Tomato;" class="fas fa-book-reader"></span>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">Getting Started</h3>
+                            <p class="intro">Get started with Ansible and learning how thing work</p>
+                            <a class="link" href="https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item item-purple col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <span aria-hidden="true" style="font-size: 3em; color: Tomato;" class="fas fa-chalkboard"></span>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">Ansible Playbooks</h3>
+                            <p class="intro">Learn how to create and use Playbooks</p>
+                            <a class="link" href="https://docs.ansible.com/ansible/latest/user_guide/playbooks.html"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item item-primary col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <span aria-hidden="true" style="font-size: 3em; color: Tomato;" class="far fa-newspaper"></span>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">Inventory</h3>
+                            <p class="intro">Learn how to build your inventory</p>
+                            <a class="link" href="https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item item-orange col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <span style="font-size: 3em; color: Tomato;" class="icon fa fa-paper-plane"></span>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">Community Information</h3>
+                            <p class="intro">Learn how to be a contributing member of the Ansible community</p>
+                            <a class="link" href="https://docs.ansible.com/ansible/latest/community/index.html"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+
+<div class="item item-green col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                               <span style="font-size: 3em; color: Tomato;" class="far fa-file-video"></i>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">Quick Start Video</h3>
+                            <p class="intro">Video - Quick Start with Ansible</p>
+                            <a class="link" href="https://www.ansible.com/resources/videos/quick-start-video?extIdCarryOver=true&sc_cid=701f2000001OH6uAAG"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item item-pink item-2 col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <span aria-hidden="true" style="font-size: 3em; color: Tomato;" class="fab fa-readme"></span>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">Modules</h3>
+                            <p class="intro">Index of Ansible Modules</p>
+                            <a class="link" href="https://docs.ansible.com/ansible/latest/modules/modules_by_category.html"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item item-blue col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <span aria-hidden="true" style="font-size: 3em; color: Tomato;" class="icon fas fa-book"></span>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">Network Modules</h3>
+                            <p class="intro">Index of Network Modules</p>
+                            <a class="link" href="https://docs.ansible.com/ansible/latest/modules/list_of_network_modules.html"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item item-purple col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                               <span style="font-size: 3em; color: Tomato;" class="fas fa-book-reader"></i>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">Developer Guide</h3>
+                            <p class="intro">Detailed information for developers on how to test and document modules, and more</p>
+                            <a class="link" href="https://docs.ansible.com/ansible/latest/dev_guide/index.html"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                <div class="item item-primary col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                               <span style="font-size: 3em; color: Tomato;" class="icon fas fa-book"></i>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">Previous Versions</h3>
+                            <p class="intro">For those looking for older verions of the documentation</p>
+                            <a class="link" href="ansible_project_doc_versions.html"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                </div><!--//cards-->
+                
+            </div><!--//container-->
+        </section><!--//cards-section-->
+    </div><!--//page-wrapper-->
+    
+    <footer>
+    <section id="ansible-footer" class="pb-0">
+        <iframe src="https://www.ansible.com/docs-footer" scrolling="no"></iframe>
+    </section>
+
+    <script src="iframeResizer.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('iframe').iFrameResize( [{log:true}] );
+
+            // make tower collapsibles work like an accordian
+            $("section[id*='tower']").on('show.bs.collapse', function () {
+                var id = $(this).attr("id");
+                console.log(id);
+
+                $("section[id*='tower']").not(id).removeClass("show");
+                $("section[id*='tower'] a[href!='"+id+"']").addClass("collapsed");
+
+            });
+        });
+    </script>
+</footer>
+
+    <!--    <div class="container"> -->
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+         <!--   <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small> -->
+            
+       <!-- </div> --><!--//container-->
+    <!--</footer> --><!--//footer-->
+    
+     
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>                                                                
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    
+
+
+</body>
+</html> 
+
